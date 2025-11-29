@@ -1,6 +1,6 @@
 import { streamText } from "ai";
 import { openai } from "@ai-sdk/openai";
-import type { Agent, AgentConfig, Message, SearchResult } from "../types.js";
+import type { Message, SearchResult } from "../types.js";
 import { parseRequest, createErrorResponse } from "./requestParser.js";
 
 /**

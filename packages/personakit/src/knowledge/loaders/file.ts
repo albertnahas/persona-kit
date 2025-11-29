@@ -33,7 +33,7 @@ export function createFileLoader(options?: {
   const markdownLoader = createMarkdownLoader(options);
 
   return {
-    canHandle(source: string): boolean {
+    canHandle(_source: string): boolean {
       // Can handle directories and supported file types
       return true;
     },

@@ -1,4 +1,4 @@
-import type { Message, MemoryStore } from "../types.js";
+import type { Message } from "../types.js";
 
 /**
  * Options for memory stores
