@@ -48,6 +48,9 @@ chroma_data/
 # Build artifacts
 *.tgz
 
+# Spec files
+Spec.md
+
 # Optional: Keep example env files
 !.env.example
 !.env.template
