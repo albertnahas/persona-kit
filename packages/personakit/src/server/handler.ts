@@ -55,7 +55,7 @@ export function createHandler(options: HandlerOptions = {}) {
       }
 
       // Stream response
-      const result = streamText({
+      const result = await streamText({
         model: openai(model),
         system: systemPrompt || undefined,
         messages: allMessages.map((m) => ({
@@ -66,7 +66,7 @@ export function createHandler(options: HandlerOptions = {}) {
 
       // Save history after response
       if (options.saveHistory && sessionId) {
-        result.text.then(async (text) => {
+        result.text.then(async (text: string) => {
           const newMessages: Message[] = [
             ...allMessages,
             {
