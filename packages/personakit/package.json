@@ -58,12 +58,12 @@
     "openai",
     "vercel-ai"
   ],
-  "author": "",
+  "author": "Albert Nahas",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/personakit/personakit.git",
+    "url": "https://github.com/albertnahas/persona-kit.git",
     "directory": "packages/personakit"
   },
-  "homepage": "https://github.com/personakit/personakit#readme"
+  "homepage": "https://github.com/albertnahas/persona-kit#readme"
 }
