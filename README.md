@@ -51,6 +51,14 @@ pnpm dev
 
 Edit `personakit/agent.ts`, drop docs in `personakit/knowledge/`, deploy to Vercel.
 
+## Examples in Production
+
+See PersonaKit in action:
+
+- **[Albert's Portfolio](https://albert-portfolio-nine.vercel.app/)** - AI-powered portfolio assistant with RAG knowledge base
+
+Building with PersonaKit? [Add your project!](https://github.com/albertnahas/persona-kit/issues/new)
+
 ## Documentation
 
 - [Getting Started](./docs/getting-started.md)
