@@ -73,6 +73,26 @@ Your agent will now answer questions using your documents.
 2. Add your `OPENAI_API_KEY` in environment variables
 3. Deploy!
 
+### Path Handling for Production
+
+When deploying to Vercel or other serverless platforms, file paths must be **absolute** for the production build. Relative paths work in development but will fail in production.
+
+**❌ Development-only (won't work in production):**
+```typescript
+personality: "./personakit/persona.md",
+knowledgeBase: "./personakit/knowledge",
+```
+
+**✅ Production-ready:**
+```typescript
+import path from "path";
+
+personality: path.join(process.cwd(), "personakit/persona.md"),
+knowledgeBase: path.join(process.cwd(), "personakit/knowledge"),
+```
+
+This template uses relative paths by default for simplicity. Update to absolute paths before deploying to production.
+
 ## Project Structure
 
 ```
